@@ -23,9 +23,7 @@ We're building open-source AI agents for the parts of research that AI really sh
 
 | Repo | What |
 |------|------|
-| [handbook](https://github.com/Agents4Academia-AI/handbook) | Code of conduct, IP / open-source policy, advisor list, teams, working norms |
-| [example-agents](https://github.com/Agents4Academia-AI/example-agents) | The Day-1 workshop materials — three tracks for *building* agents (Claude Code, Anthropic SDK, Agent SDK) plus a bonus track on *operating* them well |
-| [starter-template](https://github.com/Agents4Academia-AI/starter-template) | Template each team forks on Day 1 |
+| [example-agents](https://github.com/Agents4Academia-AI/example-agents) | Day-1 workshop materials — three tracks for *building* agents (Claude Code, Anthropic SDK, Agent SDK) plus a bonus track on *operating* them well |
 | `team-…` | One repo per team, created on Day 1 after team formation |
 
 ## Current teams
@@ -42,4 +40,4 @@ Tom Rainforth (Oxford) · Wee Sun Lee (NUS) · Luke Ong (NTU).
 
 ## Supported by
 
-University of Oxford (Department of Statistics) · Anthropic (Claude API credits).
+University of Oxford (Department of Statistics) · Anthropic (Claude Code licenses + Claude API credits for the cohort).
