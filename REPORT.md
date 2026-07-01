@@ -104,7 +104,7 @@ arXiv-id), **evidence-grounded LLM judging**, and **Claude-Code skills + a
 multi-provider backend**. Prior's three standalone stages (`explore` /
 `get_fulltext` / `extract`) and its `docs/shared-substrate.md` are a natural seed
 for a small library the org could stand behind — so the *next* project starts from
-ingestion-solved, not ingestion-again. *(Concrete proposal forthcoming.)*
+ingestion-solved, not ingestion-again. See **[SHARED_LIBRARY_PROPOSAL.md](https://github.com/Agents4Academia-AI/.github/blob/main/SHARED_LIBRARY_PROPOSAL.md)**.
 
 ## What's next — from phenomena to problems
 
