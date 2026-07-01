@@ -26,9 +26,25 @@ We're building open-source AI agents for the parts of research that AI really sh
 | [example-agents](https://github.com/Agents4Academia-AI/example-agents) | Day-1 workshop materials — three tracks for *building* agents (Claude Code, Anthropic SDK, Agent SDK) plus a bonus track on *operating* them well |
 | `team-…` | One repo per team, created on Day 1 after team formation |
 
-## Current teams
+## Teams & projects
 
-*To be filled in after team formation, Tue 16 Jun morning.*
+Six teams, spanning the research lifecycle — **find → organise → reproduce → verify**:
+
+| Project | What it does | Repo |
+|---|---|---|
+| **Prior** | primary literature → an auditable graph of claims & contributions (provenance · contradictions · confidence) | [prior](https://github.com/Agents4Academia-AI/prior) |
+| **UReKA** | ingest Zotero/Notion/Obsidian/arXiv → a linked knowledge base + auto-built learning courses | [UReKA](https://github.com/Agents4Academia-AI/UReKA) |
+| **PKA** | a Claude Code agent inside your Obsidian vault — PARA + calendar-based time management | [personal-knowledge-assistant](https://github.com/Agents4Academia-AI/personal-knowledge-assistant) |
+| **benchmark-replicator** | paper PDF -> a clean, runnable implementation + reproduction experiments | [benchmark-replicator](https://github.com/Agents4Academia-AI/benchmark-replicator) |
+| **benchmark-replicator-evaluator** | evaluates the replicas against reference code | [...-evaluator](https://github.com/Agents4Academia-AI/benchmark-replicator-evaluator) |
+| **citation-verification** | verify a draft's citations against retrieved evidence — real? metadata right? claim supported? | [citation_verification](https://github.com/Agents4Academia-AI/citation_verification) |
+| **automated review** *(Team 5)* | agentic assessment / peer review of papers | *forthcoming* |
+
+## Outcomes & write-up
+
+**Full report -> [REPORT.md](https://github.com/Agents4Academia-AI/.github/blob/main/REPORT.md)** — the research-lifecycle framing, each project, and an honest **model-behaviour & failure-modes** section.
+
+A few things every team hit: models **confabulate citations** unless you force retrieval; **provenance beats fluency**; **confidence is easy to show, hard to earn**; and the **infrastructure tax** (Semantic Scholar / OpenAlex rate limits, PDF extraction, full-text licensing) is real and shared. Built almost entirely on **Claude Code**.
 
 ## Organisers
 
