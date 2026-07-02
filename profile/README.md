@@ -38,13 +38,11 @@ Six teams, spanning the research lifecycle — **find → organise → reproduce
 | **benchmark-replicator** | paper PDF -> a clean, runnable implementation + reproduction experiments | [benchmark-replicator](https://github.com/Agents4Academia-AI/benchmark-replicator) |
 | **benchmark-replicator-evaluator** | evaluates the replicas against reference code | [...-evaluator](https://github.com/Agents4Academia-AI/benchmark-replicator-evaluator) |
 | **citation-verification** | verify a draft's citations against retrieved evidence — real? metadata right? claim supported? | [citation_verification](https://github.com/Agents4Academia-AI/citation_verification) |
-| **automated review** *(Team 5)* | agentic assessment / peer review of papers | *forthcoming* |
+| **auto-reviewer** *(Team 5)* | a 10-stage Claude-API pipeline that reviews deep-learning paper PDFs (claim/evidence map, novelty + rigor checks, self-critique) into author-facing feedback; ships with a web app | [auto-reviewer](https://github.com/Agents4Academia-AI/auto-reviewer) |
 
 ## Outcomes & write-up
 
-**Full report -> [REPORT.md](https://github.com/Agents4Academia-AI/.github/blob/main/REPORT.md)** — the research-lifecycle framing, each project, and an honest **model-behaviour & failure-modes** section.
-
-A few things every team hit: models **confabulate citations** unless you force retrieval; **provenance beats fluency**; **confidence is easy to show, hard to earn**; and the **infrastructure tax** (Semantic Scholar / OpenAlex rate limits, PDF extraction, full-text licensing) is real and shared. Built almost entirely on **Claude Code**.
+**Full report -> [REPORT.md](https://github.com/Agents4Academia-AI/.github/blob/main/REPORT.md)** — the research-lifecycle framing, each project, the shared-substrate opportunity, and what's next.
 
 ## Organisers
 

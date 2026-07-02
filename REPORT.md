@@ -16,7 +16,7 @@ seriously — no fluent-but-uncheckable answers? Six teams each took a slice.
   │   Prior    │       │   UReKA    │       │  benchmark-  │     │   citation-    │
   │  atlas of  │       │    PKA     │       │  replicator  │     │  verification  │
   │   claims   │       │            │       │ (+ evaluator)│     │ Team 5: auto-  │
-  └────────────┘       └────────────┘       └──────────────┘     │  review [TBD]  │
+  └────────────┘       └────────────┘       └──────────────┘     │     review     │
                                                                  └────────────────┘
 ```
 
@@ -53,48 +53,15 @@ memory.* For each `(claim, citation)` pair: is the reference **real**, is the
 **metadata** right, and does the cited paper **actually support** the claim it's
 attached to? Grounded in retrieved evidence, never model recollection.
 
-**Team 5 — automated review** *(repo forthcoming)* — agentic assessment / peer
-review of papers. *[details TBD — to be folded in once the repo is public.]*
-
-## What we learned — model behaviour & failure modes
-
-The most useful output of a hackathon like this isn't the demos, it's the honest
-list of where the models help and where they break on real research tasks.
-
-1. **Grounding beats memory — and the models fight you on it.** Every team that
-   touched citations or quotes had to *force* retrieval; left to memory, models
-   confabulate references, authors, and "support." citation-verification made
-   "evidence, never model memory" a hard rule; Prior grounds every claim in a node
-   id; benchmark-replicator works from the actual paper, not a recollection of it.
-
-2. **Provenance is the product.** For research, a fluent answer you can't check is
-   nearly worthless. The tools that felt trustworthy were the ones where every
-   output pointed back to a source you could open.
-
-3. **Confidence is easy to display and hard to earn.** Prior shows a confidence
-   signal but is explicit that today it means *extraction faithfulness + agreement
-   across model runs*, **not** *strength of evidence*. Calibrating an agent's
-   confidence against ground truth (IPCC/IPBES-style) is still open.
-
-4. **Precision on the interesting bits is ~50%.** Prior's automatic contradiction
-   detector surfaced six candidates; ~2–3 were substantive, the rest were
-   novelty-framing ("unlike prior work…") mis-read as conflict. Recognising genuine
-   significance sits between "seeing it everywhere and recognising it nowhere."
-
-5. **The infrastructure tax is real — and shared.** Rate limits (Semantic Scholar
-   & OpenAlex 429s), PDF extraction, and closed-access full-text licensing ate a
-   large share of everyone's time. Almost every team reinvented paper ingestion.
-
-6. **Human-in-the-loop, by design.** PKA never files a note or writes a calendar
-   event without approval; Prior gates ingestion; citation-verification degrades a
-   stuck item to an honest `unresolved` row rather than guessing. Agents propose;
-   humans dispose.
-
-7. **Claude Code was the substrate; prompt caching was the economics.** Most
-   projects ran on Claude Code (no metered API). Prior alone logged **~1.26 B
-   tokens with ~93 % served from cache** — caching, not raw throughput, is what
-   makes long agentic sessions affordable (≈ $1.3 k equivalent-API vs. a flat
-   subscription).
+**auto-reviewer** — *author-facing peer review for deep-learning papers.* A
+10-stage Claude-API pipeline: PDF → structured paper → claim/evidence map →
+section-by-section issues → novelty check (web search for prior work) →
+significance from five reviewer personas → rigor check → drafted review →
+self-critique for hallucinations and over-claims → final review + an author
+improvement checklist. The PDF rides along as a **cached document block**, so each
+stage sees the real figures, tables and layout — not a paraphrase; a small web app
+streams the ten stages live. Aimed at helping authors *improve* papers, not
+gatekeep. *(Team 5.)*
 
 ## The shared-substrate opportunity
 
@@ -121,7 +88,7 @@ pursued, with the evidence and uncertainty made auditable.
 - **Prior** — github.com/Agents4Academia-AI/prior · *(slides linked in its README)*
 - **benchmark-replicator** *(public)* · **benchmark-replicator-evaluator**
 - **citation-verification** · **UReKA** · **personal-knowledge-assistant**
-- **automated review** — *forthcoming*
+- **auto-reviewer** — github.com/Agents4Academia-AI/auto-reviewer
 
 Built during [Agents4Academia](https://github.com/Agents4Academia-AI), 14–26 June
 2026, largely through Claude Code.
