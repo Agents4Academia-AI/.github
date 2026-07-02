@@ -26,8 +26,7 @@ seriously — no fluent-but-uncheckable answers? Six teams each took a slice.
 OpenAlex + arXiv, extracts each paper's contributions and claims, links them across
 the literature (supports / extends / refines / **contradicts**), and reasons over
 the graph. Every claim is one click from its source; contradictions are surfaced,
-not averaged. `Scoper → Contributor → Cartographer → Navigator`. *(Team 6 — Klara,
-Harit.)*
+not averaged. `Scoper → Contributor → Cartographer → Navigator`.
 
 **UReKA** — *a knowledge-management agent.* Ingests annotated sources (Zotero PDFs,
 Notion, Obsidian, arXiv, web) into an interlinked base of paper- and concept-pages,
@@ -46,7 +45,7 @@ actually read and build on, rather than a bit-rotted repo. Multi-provider
 
 **benchmark-replicator-evaluator** — *does the replica actually work?* A curated
 eval set of papers with reference code (DIRECT, DSOF, SimSiam, NGBoost) and
-correctness tests for the replicator's output. *(Team — Arya, Olga, Sahel.)*
+correctness tests for the replicator's output.
 
 **citation-verification** — *check a draft's citations against evidence, not
 memory.* For each `(claim, citation)` pair: is the reference **real**, is the
@@ -61,34 +60,21 @@ self-critique for hallucinations and over-claims → final review + an author
 improvement checklist. The PDF rides along as a **cached document block**, so each
 stage sees the real figures, tables and layout — not a paraphrase; a small web app
 streams the ten stages live. Aimed at helping authors *improve* papers, not
-gatekeep. *(Team 5.)*
+gatekeep.
 
 ## The shared-substrate opportunity
 
 Read six codebases side by side and the same primitives recur: **paper/PDF
 ingestion + full-text fetching**, **citation / reference resolution** (DOI ↔
 arXiv-id), **evidence-grounded LLM judging**, and **Claude-Code skills + a
-multi-provider backend**. Prior's three standalone stages (`explore` /
-`get_fulltext` / `extract`) and its `docs/shared-substrate.md` are a natural seed
-for a small library the org could stand behind — so the *next* project starts from
-ingestion-solved, not ingestion-again. See **[SHARED_LIBRARY_PROPOSAL.md](https://github.com/Agents4Academia-AI/.github/blob/main/SHARED_LIBRARY_PROPOSAL.md)**.
-
-## What's next — from phenomena to problems
-
-van der Schaar's *Open-Beginningness* (2026) names the frontier several of these
-projects gesture at: not just answering posed questions, but helping decide **which
-phenomena deserve attention and what questions to form around them** — the
-judgement *prior* to the task. Prior's gaps and contradictions,
-citation-verification's "does this actually support the claim," the review agent's
-judgement calls — each is a step toward AI that helps shape *which* problems get
-pursued, with the evidence and uncertainty made auditable.
+multi-provider backend** — and almost every team rebuilt them from scratch. That
+points to a clear opportunity: a small shared library the org can stand behind, so
+the *next* project starts from ingestion-solved, not ingestion-again. See **[SHARED_LIBRARY_PROPOSAL.md](https://github.com/Agents4Academia-AI/.github/blob/main/SHARED_LIBRARY_PROPOSAL.md)**.
 
 ## Links & credits
 
-- **Prior** — github.com/Agents4Academia-AI/prior · *(slides linked in its README)*
-- **benchmark-replicator** *(public)* · **benchmark-replicator-evaluator**
-- **citation-verification** · **UReKA** · **personal-knowledge-assistant**
-- **auto-reviewer** — github.com/Agents4Academia-AI/auto-reviewer
+- **Hackathon** — [agents4academia.github.io](https://agents4academia.github.io) · [white paper](https://docs.google.com/document/d/1uxBDYzoV90RUOoq_yaazDJ2wcvszl7pxs4qk97Lzizc/edit)
+- **Projects & repos** — Prior · UReKA · PKA · benchmark-replicator · benchmark-replicator-evaluator · citation-verification · auto-reviewer — all under [github.com/Agents4Academia-AI](https://github.com/Agents4Academia-AI)
 
 Built during [Agents4Academia](https://github.com/Agents4Academia-AI), 14–26 June
 2026, largely through Claude Code.
