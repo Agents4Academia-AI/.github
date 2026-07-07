@@ -19,9 +19,25 @@ We're building open-source AI agents for the parts of research that AI really sh
 | 👋 **Introductions deck** | [Google Slides](https://docs.google.com/presentation/d/19d5hSmsinA1zZN9ncZYQT1kU2mjdyN-suy5MWghKW7k/edit?usp=sharing) — who's in the cohort |
 | 💡 **IDEAS deck** | [Google Slides](https://docs.google.com/presentation/d/1pkmUqRoULQxsCMauU6raMWSkNoZio7rPVcl6rvJscW8/edit?usp=sharing) — what we're building and starter ideas |
 
-## Teams & projects
+## The premise
 
-Five projects, spanning the research lifecycle — **find → organise → reproduce → verify**:
+Research is a lifecycle — **find** the relevant work, **organise** what you know,
+**reproduce** and benchmark it, **verify** and review it. Every stage is full of
+toil that is *almost* mechanical but needs judgement. We asked a simple question:
+how far can LLM agents get on each stage if you take **grounding and auditability**
+seriously — no fluent-but-uncheckable answers? Five teams each took a slice — and
+built their systems in two weeks, almost entirely with Claude Code.
+
+```mermaid
+flowchart LR
+  D["**DISCOVER**<br/>Prior *(Team 6)*<br/>an auditable atlas of claims"]
+  O["**ORGANISE**<br/>UReKA *(Team 3)*<br/>a linked knowledge base"]
+  R["**REPRODUCE**<br/>benchmark-replicator *(Team 1)*<br/>paper → runnable code"]
+  V["**VERIFY / REVIEW**<br/>citation-verification *(Team 2)*<br/>auto-reviewer *(Team 5)*"]
+  D --> O --> R --> V
+```
+
+## Teams & projects
 
 | Project | What it does | Repo |
 |---|---|---|
@@ -30,10 +46,6 @@ Five projects, spanning the research lifecycle — **find → organise → repro
 | **benchmark-replicator** *(Team 1)* | paper PDF -> a clean, runnable implementation + reproduction experiments | [benchmark-replicator](https://github.com/Agents4Academia-AI/benchmark-replicator) |
 | **citation-verification** *(Team 2)* | verify a draft's citations against retrieved evidence — real? metadata right? claim supported? | [citation_verification](https://github.com/Agents4Academia-AI/citation_verification) |
 | **auto-reviewer** *(Team 5)* | a 10-stage Claude-API pipeline that reviews deep-learning paper PDFs (claim/evidence map, novelty + rigor checks, self-critique) into author-facing feedback; ships with a web app | [auto-reviewer](https://github.com/Agents4Academia-AI/auto-reviewer) |
-
-## Outcomes & write-up
-
-**Full report -> [REPORT.md](https://github.com/Agents4Academia-AI/.github/blob/main/REPORT.md)** — the research-lifecycle framing, each project, the shared-substrate opportunity, and what's next.
 
 ## Organisers
 
