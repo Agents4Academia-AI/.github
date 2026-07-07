@@ -19,24 +19,15 @@ We're building open-source AI agents for the parts of research that AI really sh
 | 👋 **Introductions deck** | [Google Slides](https://docs.google.com/presentation/d/19d5hSmsinA1zZN9ncZYQT1kU2mjdyN-suy5MWghKW7k/edit?usp=sharing) — who's in the cohort |
 | 💡 **IDEAS deck** | [Google Slides](https://docs.google.com/presentation/d/1pkmUqRoULQxsCMauU6raMWSkNoZio7rPVcl6rvJscW8/edit?usp=sharing) — what we're building and starter ideas |
 
-## Repositories
-
-| Repo | What |
-|------|------|
-| `example-agents` *(private)* | Day-1 workshop materials — three tracks for *building* agents (Claude Code, Anthropic SDK, Agent SDK) plus a bonus track on *operating* them well |
-| `team-…` | One repo per team, created on Day 1 after team formation |
-
 ## Teams & projects
 
-Six teams, spanning the research lifecycle — **find → organise → reproduce → verify**:
+Five projects, spanning the research lifecycle — **find → organise → reproduce → verify**:
 
 | Project | What it does | Repo |
 |---|---|---|
 | **Prior** | primary literature → an auditable graph of claims & contributions (provenance · contradictions · confidence) | [prior](https://github.com/Agents4Academia-AI/prior) |
 | **UReKA** | ingest Zotero/Notion/Obsidian/arXiv → a linked knowledge base + auto-built learning courses | [UReKA](https://github.com/Agents4Academia-AI/UReKA) |
-| **PKA** | a Claude Code agent inside your Obsidian vault — PARA + calendar-based time management | `personal-knowledge-assistant` *(private)* |
 | **benchmark-replicator** | paper PDF -> a clean, runnable implementation + reproduction experiments | [benchmark-replicator](https://github.com/Agents4Academia-AI/benchmark-replicator) |
-| **benchmark-replicator-evaluator** | evaluates the replicas against reference code | `…-evaluator` *(private)* |
 | **citation-verification** | verify a draft's citations against retrieved evidence — real? metadata right? claim supported? | [citation_verification](https://github.com/Agents4Academia-AI/citation_verification) |
 | **auto-reviewer** *(Team 5)* | a 10-stage Claude-API pipeline that reviews deep-learning paper PDFs (claim/evidence map, novelty + rigor checks, self-critique) into author-facing feedback; ships with a web app | [auto-reviewer](https://github.com/Agents4Academia-AI/auto-reviewer) |
 

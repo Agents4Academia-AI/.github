@@ -1,4 +1,4 @@
-# Agents4Academia — what six agents taught us about research work
+# Agents4Academia — what five agents taught us about research work
 
 *Agents4Academia hackathon · 14–26 June 2026 · built almost entirely on Claude Code*
 
@@ -8,14 +8,14 @@ Research is a lifecycle — **find** the relevant work, **organise** what you kn
 **reproduce** and benchmark it, **verify** and review it. Every stage is full of
 toil that is *almost* mechanical but needs judgement. We asked a simple question:
 how far can LLM agents get on each stage if you take **grounding and auditability**
-seriously — no fluent-but-uncheckable answers? Six teams each took a slice.
+seriously — no fluent-but-uncheckable answers? Five teams each took a slice.
 
 ```
      DISCOVER              ORGANISE             REPRODUCE            VERIFY / REVIEW
   ┌────────────┐       ┌────────────┐       ┌──────────────┐     ┌────────────────┐
   │   Prior    │       │   UReKA    │       │  benchmark-  │     │   citation-    │
-  │  atlas of  │       │    PKA     │       │  replicator  │     │  verification  │
-  │   claims   │       │            │       │ (+ evaluator)│     │ Team 5: auto-  │
+  │  atlas of  │       │            │       │  replicator  │     │  verification  │
+  │   claims   │       │            │       │              │     │ Team 5: auto-  │
   └────────────┘       └────────────┘       └──────────────┘     │     review     │
                                                                  └────────────────┘
 ```
@@ -33,19 +33,10 @@ Notion, Obsidian, arXiv, web) into an interlinked base of paper- and concept-pag
 answers cited natural-language questions (and flags gaps), and even builds full
 learning courses: `/goal → /curriculum → /tutor`.
 
-**PKA (personal-knowledge-assistant)** — *an agent that lives inside your Obsidian
-vault.* PARA organisation + "calendar, not to-do lists" time management, filing
-captures from Apple Notes/Reminders — always human-in-the-loop. The shareable,
-de-personalised template of one researcher's working system.
-
 **benchmark-replicator** — *paper PDF → a clean, minimal, runnable implementation*
 of the method, plus the experiments to reproduce its key results. Code you can
 actually read and build on, rather than a bit-rotted repo. Multi-provider
 (Anthropic / OpenAI / Google / Ollama). *(Public, AGPL.)*
-
-**benchmark-replicator-evaluator** — *does the replica actually work?* A curated
-eval set of papers with reference code (DIRECT, DSOF, SimSiam, NGBoost) and
-correctness tests for the replicator's output.
 
 **citation-verification** — *check a draft's citations against evidence, not
 memory.* For each `(claim, citation)` pair: is the reference **real**, is the
@@ -64,7 +55,7 @@ gatekeep.
 
 ## The shared-substrate opportunity
 
-Read six codebases side by side and the same primitives recur: **paper/PDF
+Read the codebases side by side and the same primitives recur: **paper/PDF
 ingestion + full-text fetching**, **citation / reference resolution** (DOI ↔
 arXiv-id), **evidence-grounded LLM judging**, and **Claude-Code skills + a
 multi-provider backend** — and almost every team rebuilt them from scratch. That
@@ -74,7 +65,7 @@ the *next* project starts from ingestion-solved, not ingestion-again. See **[SHA
 ## Links & credits
 
 - **Hackathon** — [agents4academia.github.io](https://agents4academia.github.io) · [white paper](https://docs.google.com/document/d/1uxBDYzoV90RUOoq_yaazDJ2wcvszl7pxs4qk97Lzizc/edit)
-- **Projects & repos** — Prior · UReKA · PKA · benchmark-replicator · benchmark-replicator-evaluator · citation-verification · auto-reviewer — all under [github.com/Agents4Academia-AI](https://github.com/Agents4Academia-AI)
+- **Projects & repos** — Prior · UReKA · benchmark-replicator · citation-verification · auto-reviewer — all under [github.com/Agents4Academia-AI](https://github.com/Agents4Academia-AI)
 
 Built during [Agents4Academia](https://github.com/Agents4Academia-AI), 14–26 June
 2026, largely through Claude Code.
