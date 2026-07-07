@@ -25,10 +25,10 @@ Five projects, spanning the research lifecycle — **find → organise → repro
 
 | Project | What it does | Repo |
 |---|---|---|
-| **Prior** | primary literature → an auditable graph of claims & contributions (provenance · contradictions · confidence) | [prior](https://github.com/Agents4Academia-AI/prior) |
-| **UReKA** | ingest Zotero/Notion/Obsidian/arXiv → a linked knowledge base + auto-built learning courses | [UReKA](https://github.com/Agents4Academia-AI/UReKA) |
-| **benchmark-replicator** | paper PDF -> a clean, runnable implementation + reproduction experiments | [benchmark-replicator](https://github.com/Agents4Academia-AI/benchmark-replicator) |
-| **citation-verification** | verify a draft's citations against retrieved evidence — real? metadata right? claim supported? | [citation_verification](https://github.com/Agents4Academia-AI/citation_verification) |
+| **Prior** *(Team 6)* | primary literature → an auditable graph of claims & contributions (provenance · contradictions · confidence) | [prior](https://github.com/Agents4Academia-AI/prior) |
+| **UReKA** *(Team 3)* | ingest Zotero/Notion/Obsidian/arXiv → a linked knowledge base + auto-built learning courses | [UReKA](https://github.com/Agents4Academia-AI/UReKA) |
+| **benchmark-replicator** *(Team 1)* | paper PDF -> a clean, runnable implementation + reproduction experiments | [benchmark-replicator](https://github.com/Agents4Academia-AI/benchmark-replicator) |
+| **citation-verification** *(Team 2)* | verify a draft's citations against retrieved evidence — real? metadata right? claim supported? | [citation_verification](https://github.com/Agents4Academia-AI/citation_verification) |
 | **auto-reviewer** *(Team 5)* | a 10-stage Claude-API pipeline that reviews deep-learning paper PDFs (claim/evidence map, novelty + rigor checks, self-critique) into author-facing feedback; ships with a web app | [auto-reviewer](https://github.com/Agents4Academia-AI/auto-reviewer) |
 
 ## Outcomes & write-up
