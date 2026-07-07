@@ -11,11 +11,11 @@ Read the cohort's repos side by side and the same plumbing appears in nearly eve
 | paper / PDF / arXiv / LaTeX → clean full text | prior · benchmark-replicator · citation-verification · UReKA |
 | DOI ↔ arXiv-id ↔ OpenAlex-id resolution + metadata validation | prior · citation-verification |
 | rate-limited source clients (OpenAlex / Semantic Scholar / Unpaywall) + backoff | prior — the 429 tax everyone paid |
-| evidence-grounded LLM judging (claim ↔ evidence) | prior (self-eval) · citation-verification (relevance) · benchmark evaluator |
+| evidence-grounded LLM judging (claim ↔ evidence) | prior (self-eval) · citation-verification (relevance) |
 | multi-provider LLM backend (Claude Code / Anthropic / OpenAI / Gemini / Ollama) | prior · benchmark-replicator |
-| Claude Code skills (fetch / verify / extract) | citation-verification · UReKA · PKA |
+| Claude Code skills (fetch / verify / extract) | citation-verification · UReKA |
 
-Six teams solved "get me the clean text of this paper" six times, and all of us fought Semantic Scholar / OpenAlex 429s independently. **Extract once, reuse everywhere** would have saved days.
+Every team solved "get me the clean text of this paper" for itself, and all of us fought Semantic Scholar / OpenAlex 429s independently. **Extract once, reuse everywhere** would have saved days.
 
 ## Proposal
 
@@ -45,7 +45,7 @@ hits = openalex.search("retrieval augmented generation", per_page=50)   # backof
 ```
 
 ## What each team gets
-- **benchmark-replicator / evaluator** — `ingest` (paper → text) + `resolve`, free; keep your replication logic.
+- **benchmark-replicator** — `ingest` (paper → text) + `resolve`, free; keep your replication logic.
 - **citation-verification** — `ingest` (arXiv/PDF/LaTeX) + `resolve` (reality + metadata) + `judge` (support) = steps 1–2 of your pipeline, shared.
 - **UReKA** — `ingest` for arXiv/web sources; `resolve` for linking.
 - **Prior** — donates the seed and drops its private copies.
