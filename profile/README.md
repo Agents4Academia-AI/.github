@@ -10,14 +10,6 @@ We're building open-source AI agents for the parts of research that AI really sh
 
 ---
 
-## Where to find what
-
-| | |
-|---|---|
-| 📄 **Motivation white paper** | [Google Doc](https://docs.google.com/document/d/1GTOP_8SN2efNR4bdRnMmcNZUERBlsN2ihLt2mlUFJYg/edit?usp=sharing) — the *why* this hackathon exists |
-| 🗓️ **Schedule** | [Google Doc](https://docs.google.com/document/d/1B3b99ug1ygjJ-_M99URbHuIcsk-SRwqbnF8hu_-7yGU/edit?usp=sharing) — day-by-day, presence model, locations |
-| 👋 **Introductions deck** | [Google Slides](https://docs.google.com/presentation/d/19d5hSmsinA1zZN9ncZYQT1kU2mjdyN-suy5MWghKW7k/edit?usp=sharing) — who's in the cohort |
-| 💡 **IDEAS deck** | [Google Slides](https://docs.google.com/presentation/d/1pkmUqRoULQxsCMauU6raMWSkNoZio7rPVcl6rvJscW8/edit?usp=sharing) — what we're building and starter ideas |
 
 ## The premise
 
