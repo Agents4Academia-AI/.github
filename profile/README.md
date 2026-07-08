@@ -28,14 +28,7 @@ how far can LLM agents get on each stage if you take **grounding and auditabilit
 seriously — no fluent-but-uncheckable answers? Five teams each took a slice — and
 built their systems in two weeks, almost entirely with Claude Code.
 
-```mermaid
-flowchart LR
-  D["**DISCOVER**<br/>Prior *(Team 6)*<br/>an auditable atlas of claims"]
-  O["**ORGANISE**<br/>UReKA *(Team 3)*<br/>a linked knowledge base"]
-  R["**REPRODUCE**<br/>benchmark-replicator *(Team 1)*<br/>paper → runnable code"]
-  V["**VERIFY / REVIEW**<br/>citation-verification *(Team 2)*<br/>auto-reviewer *(Team 5)*"]
-  D --> O --> R --> V
-```
+![The research lifecycle, agent-augmented: Discover (Prior) → Organise (UReKA) → Reproduce (Benchmark-Replicator) → Verify (RefWarden) → Review (Auto-Reviewer)](lifecycle_ribbon.png)
 
 ## Teams & projects
 
