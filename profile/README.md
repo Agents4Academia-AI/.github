@@ -1,6 +1,6 @@
 # Agents4Academia
 
-![Agents4Academia — a community of researchers building agentic tools for academic work](banner.svg)
+![Agents4Academia — a community of researchers building agentic tools for academic work](banner.png)
 
 > A community of researchers building and critically understanding agentic tools for academic work.
 
