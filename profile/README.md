@@ -68,9 +68,9 @@ The first Agents4Academia hackathon was supported by **Anthropic** through Claud
 
 Thanks to our advisors:
 
-- [Tom Rainforth](https://www.robots.ox.ac.uk/~twgr/)
-- [Wee Sun Lee](https://www.comp.nus.edu.sg/~leews/)
-- [Luke Ong](https://www3.ntu.edu.sg/home/luke.ong/)
+- [Tom Rainforth](https://www.robots.ox.ac.uk/~twgr/), Oxford
+- [Wee Sun Lee](https://www.comp.nus.edu.sg/~leews/), NUS
+- [Luke Ong](https://www3.ntu.edu.sg/home/luke.ong/), NTU
 
 ## Contact
 
