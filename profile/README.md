@@ -1,73 +1,86 @@
 # Agents4Academia
 
-![The research lifecycle, agent-augmented](lifecycle_ribbon.png)
+![Agents4Academia — a community of researchers building agentic tools for academic work](banner.svg)
 
-A community building open-source agents for the boring parts of academic life —
-so you can finally take that vacation (for real this time).
+> A community of researchers building and critically understanding agentic tools for academic work.
 
-We build agents that live across the research workflow — from discovering
-literature, to organising your notes, to reproducing baselines, to verifying
-citations, to reviewing your own drafts. Every project is open-source, and we
-welcome collaborators from any institution.
+[![Discord](https://img.shields.io/badge/Discord-Join%20us-5865F2?style=for-the-badge&logo=discord&logoColor=white)](https://discord.gg/fEDXaSWwj)&nbsp;&nbsp;&nbsp;
+[![X](https://img.shields.io/badge/@agents4academia-000000?style=for-the-badge&logo=x&logoColor=white)](https://x.com/agents4academia)&nbsp;&nbsp;&nbsp;
+[![Bluesky](https://img.shields.io/badge/@agents4academia-0285FF?style=for-the-badge&logo=bluesky&logoColor=white)](https://bsky.app/profile/agents4academia.bsky.social)
 
-Our first cohort launched with a two-week hackathon in June 2026 across Oxford
-Statistics, NUS, and NTU, with generous support from Anthropic. It shipped five
-open-source agents that cover the research lifecycle end-to-end.
+AI agents (Claude, Codex, etc.) are changing what individuals can build and accomplish. Researchers can turn an idea, a recurring frustration, or a highly specific workflow into a working tool in a fraction of the time previously required.
 
-**House rule:** our agents show their sources and say "not found" rather than
-guess. Fluent summaries are easy; checkable ones are the product.
+Across academia, people are experimenting with agents for literature discovery, knowledge organisation, coding, reproducibility, review, teaching, and administration. But much of this work remains scattered across individuals and institutions, with tools built in isolation and lessons rarely shared.
 
-## Projects
+**Agents4Academia** is a community for bringing these efforts together: sharing practical experiences, identifying common needs, and developing open, reusable agentic tools shaped by researchers themselves.
 
-The five agents span the academic workflow:
+## Our goals are simple:
 
-| | Verb | Project | What it does |
-|---|---|---|---|
-| 🔍 | DISCOVER | [Prior](https://github.com/Agents4Academia-AI/prior) | Auditable knowledge graph of claims and contributions from primary literature — state of a field, contradictions, open questions. |
-| 🗂️ | ORGANISE | [UReKA](https://github.com/Agents4Academia-AI/UReKA) | Personal research knowledge assistant unifying Zotero, Notion, Obsidian, and arXiv into one linked, queryable knowledge base. |
-| 🔁 | REPRODUCE | [Benchmark-Replicator](https://github.com/Agents4Academia-AI/benchmark-replicator) | Clean, minimal, runnable implementation of any prior empirical paper. |
-| ✅ | VERIFY | [RefWarden](https://github.com/Agents4Academia-AI/citation_verification) | For every (claim, citation) pair in your draft: does the reference exist, is the metadata right, does the cited paper actually support the claim? |
-| 📝 | REVIEW | [Auto-Reviewer](https://github.com/Agents4Academia-AI/auto-reviewer) | 10-stage pipeline that turns a paper PDF into claim/evidence maps, novelty and rigor checks, and a self-critique pass for hallucinations. |
+1. **Learn together** where agents add real value, where their limitations lie, and how best practices should evolve as the technology improves.
+2. **Build together** open and reusable tools for shared academic needs, adapting them over time to new capabilities and ways of working.
 
-These aren't demos-on-slides: Prior mapped 152 papers into 581 contributions and
-989 typed relations on its own field; Benchmark-Replicator rebuilt NGBoost from
-the PDF alone and passed 36/36 tests and 7/7 verification criteria; RefWarden
-verified 106 claim–citation pairs on a recent RL paper in under seven minutes,
-catching real author and venue mismatches.
+We welcome researchers and collaborators from all institutions and disciplines to contribute to this shared effort.
 
-Building side by side, the teams kept reinventing the same plumbing — so we
-carved it into [**academia-core**](https://github.com/Agents4Academia-AI/academia-core):
-shared full-text ingestion, citation resolution, and evidence-grounded judging
-that any research agent (yours too) can build on.
+## Our principles
+
+We have an initial set of principles guiding our work in this community. These may evolve over time.
+
+**Human agency and accountability.** Agents should support researchers, not replace judgement, responsibility, intellectual ownership and accountability.
+
+**Value and meaning over AI Slop.** The goal is not simply to produce more text, code, experiments, or papers. The automation should help us in creating more value and meaningful work.
+
+**Safety and reliability.** Research agents should be reliable, transparent about their sources and uncertainty, and designed so that their outputs can be checked and traced.
+
+**Accessible and open.** Useful agentic tools should be accessible to institutions and researchers even with limited resources or funding. We encourage open-source tools, open-weight and low-cost models, and solutions that can adapt to different disciplines.
+
+**Community-driven.** The future of agentic academia should be shaped by researchers themselves. We value shared tools, open collaboration, diverse perspectives, and solutions developed around real academic needs.
 
 ## Get involved
 
-- **Try the tools.** Every repo has a README and a `pip install`. If something's confusing, open an issue.
-- **Contribute.** Pull requests, evaluations on new domains, integrations with your existing workflow — all welcome.
-- **Build on the plumbing.** Writing your own research agent? Adopt [academia-core](https://github.com/Agents4Academia-AI/academia-core) and skip the boring 20%.
-- **Organise a chapter.** If you'd like to run an Agents4Academia hackathon at your institution, get in touch.
-- **Join the next hackathon.** We're planning v2. Watch this space or contact the organisers.
+- **Try the tools.** Each repository includes setup instructions and examples.
+- **Contribute.** Pull requests, evaluations, integrations, and tests on new domains are welcome.
+- **Build on the shared infrastructure.** Use [academia-core](https://github.com/Agents4Academia-AI/academia-core) for your own research agents.
+- **Organise a chapter.** Run an Agents4Academia hackathon at your institution.
+- **Join the next cohort.** We are planning the next hackathon.
+- **Join the conversation.** Find us on [Discord](https://discord.gg/fEDXaSWwj), [X](https://x.com/agents4academia), and [Bluesky](https://bsky.app/profile/agents4academia.bsky.social).
+
+## Our first cohort (Oxford–Singapore Hackathon, June 2026)
+
+Our first cohort launched with a two-week hackathon (14–26 June 2026), running in parallel across Oxford Statistics, NUS, and NTU with generous support from Anthropic. We deliberately didn't pre-assign projects: participants identified concrete bottlenecks in their own scientific workflows and self-organised into small teams around them, so the work reflects researchers' real, felt needs rather than an imposed agenda.
+
+![Five agents across the research lifecycle](lifecycle_ribbon.png)
+
+The hackathon shipped five open-source agents spanning the research lifecycle:
+
+|  | Stage | Project | What it does |
+| --- | --- | --- | --- |
+| 🔍 | **Discover** | [Prior](https://github.com/Agents4Academia-AI/prior) | Builds an auditable knowledge graph of claims and contributions from primary literature, helping researchers understand the state of a field, contradictions, and open questions. |
+| 🗂️ | **Organise** | [UReKA](https://github.com/Agents4Academia-AI/UReKA) | Unifies Zotero, Notion, Obsidian, and arXiv into a linked, queryable research knowledge base. |
+| 🔁 | **Reproduce** | [Benchmark-Replicator](https://github.com/Agents4Academia-AI/benchmark-replicator) | Produces clean, minimal, runnable implementations of prior empirical papers. |
+| ✅ | **Verify** | [RefWarden](https://github.com/Agents4Academia-AI/citation_verification) | Checks whether references exist, whether their metadata is correct, and whether they actually support the claims they are cited for. |
+| 📝 | **Review** | [Auto-Reviewer](https://github.com/Agents4Academia-AI/auto-reviewer) | Turns a paper PDF into claim–evidence maps, novelty and rigor checks, and a self-critique pass for hallucinations. |
+
+While building side by side, the teams repeatedly encountered the same infrastructure needs. We therefore extracted them into [**academia-core**](https://github.com/Agents4Academia-AI/academia-core): shared components for full-text ingestion, citation resolution, and evidence-grounded judging that other research agents can build on.
 
 ## Acknowledgements
 
-Supported by Anthropic (Claude Code plans and API credits), Oxford Statistics,
-NUS School of Computing, and NTU College of Computing and Data Science.
+The first Agents4Academia hackathon was supported by **Anthropic** through Claude Code plans and API credits, and by **Oxford Statistics**, the **NUS School of Computing**, and the **NTU College of Computing and Data Science**.
 
-Thanks to our advisors: [Tom Rainforth](https://github.com/twgr),
-[Wee Sun Lee](https://github.com/WeeSun), [Luke Ong](https://github.com/lukeong).
+Thanks to our advisors:
+
+- [Tom Rainforth](https://www.robots.ox.ac.uk/~twgr/)
+- [Wee Sun Lee](https://www.comp.nus.edu.sg/~leews/)
+- [Luke Ong](https://www3.ntu.edu.sg/home/luke.ong/)
 
 ## Contact
 
-The organisers: [Klara Kaleb](https://github.com/klarakaleb) (Oxford),
-[Harit Vishwakarma](https://github.com/harit7) (Oxford),
-[Yee Whye Teh](https://github.com/ywteh) (Oxford),
-[Wei Liu](https://github.com/jugechengzi) (NUS),
-[Mingye Zhu](https://github.com/stevie1023) (NTU),
-[Yunqiao Yang](https://github.com/hustyyq) (NTU).
+Organisers:
 
-Reach us via GitHub issues on any project, or through the linked profiles above.
+- [Klara Kaleb](https://klarakaleb.github.io), Oxford
+- [Harit Vishwakarma](https://harit7.github.io), Oxford
+- [Yee Whye Teh](https://www.stats.ox.ac.uk/~teh/), Oxford
+- [Wei Liu](https://weiliu876.github.io), NUS
+- [Mingye Zhu](https://stevie1023.github.io), NTU
+- [Yunqiao Yang](https://hustyyq.github.io), NTU
 
----
-
-*Agents4Academia is a community-led initiative. All projects are open-source
-under permissive licences. Made with care by researchers, for researchers.*
+Reach us via Github or any of the above channels.
