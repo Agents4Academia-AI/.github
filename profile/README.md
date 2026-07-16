@@ -40,6 +40,7 @@ We have an initial set of principles guiding our work in this community. These m
 - **Try the tools.** Each repository includes setup instructions and examples.
 - **Contribute.** Pull requests, evaluations, integrations, and tests on new domains are welcome.
 - **Build on the shared infrastructure.** Use [academia-core](https://github.com/Agents4Academia-AI/academia-core) for your own research agents.
+- **Add your project.** Built an agent for academic work? Bring it into the ecosystem — see [how to join](https://github.com/Agents4Academia-AI/.github/blob/main/ECOSYSTEM.md).
 - **Organise a chapter.** Run an Agents4Academia hackathon at your institution.
 - **Join the next cohort.** We are planning the next hackathon.
 - **Join the conversation.** Find us on [Discord](https://discord.gg/fEDXaSWwj), [X](https://x.com/agents4academia), and [Bluesky](https://bsky.app/profile/agents4academia.bsky.social).
